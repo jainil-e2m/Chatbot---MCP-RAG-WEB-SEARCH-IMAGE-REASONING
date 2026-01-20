@@ -1,0 +1,31 @@
+# FastAPI Core
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+
+# LangChain Core
+langchain
+langchain-openai
+langchain-community
+
+# Additional utilities
+python-multipart
+email-validator
+
+# Authentication & Database
+supabase
+bcrypt
+python-jose[cryptography]
+passlib[bcrypt]
+
+# Web Search
+tavily-python
+
+# RAG & Document Processing
+pypdf  # PDF processing (no DLL dependencies)
+langchain-huggingface  # HuggingFace API embeddings (free, no local deps)
+langchain-community
+langchain-text-splitters
+supabase  # For vector storage

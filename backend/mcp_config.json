@@ -1,0 +1,62 @@
+{
+    "mcpServers": {
+        "gmail": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@gongrzhe/server-gmail-autoauth-mcp"
+            ],
+            "env": {
+                "GOOGLE_OAUTH_CREDENTIALS": "C:\\Users\\Jainil Trivedi\\.calendar-mcp\\gcp-oauth.keys.json"
+            },
+            "disabledTools": [
+                "batch_modify_emails",
+                "batch_delete_emails",
+                "delete_label",
+                "update_label",
+                "create_label",
+                "modify_email"
+            ]
+        },
+        "google-calendar": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@cocal/google-calendar-mcp"
+            ],
+            "env": {
+                "GOOGLE_OAUTH_CREDENTIALS": "C:\\Users\\Jainil Trivedi\\.calendar-mcp\\gcp-oauth.keys.json",
+                "GOOGLE_CALENDAR_MCP_TOKEN_PATH": "C:\\Users\\Jainil Trivedi\\.config\\google-calendar-mcp\\tokens.json"
+            },
+            "disabledTools": [
+                "list-colors",
+                "get-freebusy",
+                "respond-to-event",
+                "manage-accounts",
+                "list-calendars",
+                "search-events"
+            ]
+        },
+        "notion": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-notion"
+            ],
+            "env": {
+                "NOTION_API_KEY": "ntn_v28358481034L4QtvsFNJOZtJC28f7FzfkBbNhfwVcYd7TE"
+            }
+        },
+        "n8n": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "supergateway",
+                "--streamableHttp",
+                "https://jainil2612.app.n8n.cloud/mcp-server/http",
+                "--header",
+                "authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMDVjN2M3MS05NmRjLTQ0OWUtOTI3OS1jNzIyMzAwNjgxODQiLCJpc3MiOiJuOG4iLCJhdWQiOiJtY3Atc2VydmVyLWFwaSIsImp0aSI6ImUxMWY3NmEwLTlmNmQtNDBmNS05M2JmLWIxZjFlZjg4OTg5MiIsImlhdCI6MTc2ODgxNzcxNX0.9Tpg3JBpUcMgdJLLPBPPPVJ_6F7aoLvMSM8msPsTuNM"
+            ]
+        }
+    }
+}
